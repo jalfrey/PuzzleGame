@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\InputHanlder.cs" />
+    <Compile Include="Assets\Scripts\UI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

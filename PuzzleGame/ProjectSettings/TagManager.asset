@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - BoundingBox
+  - Cell
   layers:
   - Default
   - TransparentFX
