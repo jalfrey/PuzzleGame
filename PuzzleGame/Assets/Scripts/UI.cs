@@ -16,8 +16,21 @@ using UnityEngine.SceneManagement;
 public class UI : MonoBehaviour
 {
     public string sceneID;
+
     public void ChangeScene()
     {
         SceneManager.LoadScene(sceneID);
+    }
+
+    private void Update()
+    {
+        if(Grid.levelOneCompleted == true)
+        {
+            
+        } 
+        if(Grid.levelTwoCompleted == true)
+        {
+
+        }
     }
 }

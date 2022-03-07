@@ -14,6 +14,7 @@ using UnityEngine;
 [System.Serializable]
 public class InputHanlder : MonoBehaviour
 {
+    public static int actionCount;
     public string direction;
     Rigidbody rb;
     public static float speed = 400;
@@ -24,6 +25,7 @@ public class InputHanlder : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
+        actionCount = 0;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -50,6 +52,7 @@ public class InputHanlder : MonoBehaviour
                 this.rb.AddForce(horizontalTransform);
                 horizontalTransform = -horizontalTransform;
             }
+            actionCount++;
         }
     }
 }
